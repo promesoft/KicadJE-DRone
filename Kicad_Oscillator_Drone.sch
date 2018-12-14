@@ -58,7 +58,7 @@ Wire Wire Line
 Wire Wire Line
 	9525 1875 9525 1775
 Wire Wire Line
-	9525 1775 8950 1775
+	9525 1775 9300 1775
 Connection ~ 8950 1775
 Wire Wire Line
 	8950 1775 8950 1825
@@ -153,12 +153,12 @@ Wire Wire Line
 $Comp
 L power:+10V #PWR0103
 U 1 1 5C12E6A4
-P 1500 1000
-F 0 "#PWR0103" H 1500 850 50  0001 C CNN
-F 1 "+10V" H 1515 1173 50  0000 C CNN
-F 2 "" H 1500 1000 50  0001 C CNN
-F 3 "" H 1500 1000 50  0001 C CNN
-	1    1500 1000
+P 2075 1050
+F 0 "#PWR0103" H 2075 900 50  0001 C CNN
+F 1 "+10V" H 2090 1223 50  0000 C CNN
+F 2 "" H 2075 1050 50  0001 C CNN
+F 3 "" H 2075 1050 50  0001 C CNN
+	1    2075 1050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -195,7 +195,7 @@ U 1 1 5C12F588
 P 1500 1275
 F 0 "C1" H 1618 1321 50  0000 L CNN
 F 1 "100u" H 1618 1230 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 1538 1125 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1538 1125 50  0001 C CNN
 F 3 "~" H 1500 1275 50  0001 C CNN
 	1    1500 1275
 	1    0    0    -1  
@@ -204,15 +204,13 @@ Wire Wire Line
 	10550 2025 10600 2025
 Wire Notes Line
 	550  2000 550  600 
-Wire Wire Line
-	1500 1000 1500 1050
 $Comp
 L Connector:Jack-DC J3
 U 1 1 5C130E39
 P 850 1275
 F 0 "J3" H 905 1600 50  0000 C CNN
 F 1 "Jack-DC" H 905 1509 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 900 1235 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 900 1235 50  0001 C CNN
 F 3 "~" H 900 1235 50  0001 C CNN
 	1    850  1275
 	1    0    0    -1  
@@ -227,15 +225,14 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5C1318B3
-P 1150 1050
-F 0 "#FLG0101" H 1150 1125 50  0001 C CNN
-F 1 "PWR_FLAG" H 1150 1224 50  0000 C CNN
-F 2 "" H 1150 1050 50  0001 C CNN
-F 3 "~" H 1150 1050 50  0001 C CNN
-	1    1150 1050
+P 1925 1050
+F 0 "#FLG0101" H 1925 1125 50  0001 C CNN
+F 1 "PWR_FLAG" H 1925 1224 50  0000 C CNN
+F 2 "" H 1925 1050 50  0001 C CNN
+F 3 "~" H 1925 1050 50  0001 C CNN
+	1    1925 1050
 	1    0    0    -1  
 $EndComp
-Connection ~ 1150 1050
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5C1318D9
@@ -450,6 +447,7 @@ F 0 "RV1" H 4980 1546 50  0000 R CNN
 F 1 "10k" H 4980 1455 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Piher_T-16H_Single_Horizontal" H 5050 1500 50  0001 C CNN
 F 3 "~" H 5050 1500 50  0001 C CNN
+F 4 "LFO1" H 5050 1500 50  0001 C CNN "Position"
 	1    5050 1500
 	1    0    0    -1  
 $EndComp
@@ -500,6 +498,7 @@ F 0 "RV3" H 6130 2071 50  0000 R CNN
 F 1 "100k" H 6130 1980 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Piher_T-16H_Single_Horizontal" H 6200 2025 50  0001 C CNN
 F 3 "~" H 6200 2025 50  0001 C CNN
+F 4 "LFO1" H 6200 2025 50  0001 C CNN "Pos"
 	1    6200 2025
 	1    0    0    -1  
 $EndComp
@@ -1255,4 +1254,73 @@ Wire Wire Line
 Wire Wire Line
 	1150 1375 1150 1650
 Connection ~ 1150 1650
+Text GLabel 1500 1050 1    50   Input ~ 0
+DC-in
+$Comp
+L Sensor_Optical:LDR03 R?
+U 1 1 5C1A1B97
+P 9300 1500
+F 0 "R?" H 9370 1546 50  0000 L CNN
+F 1 "OSC1CV" H 9370 1455 50  0000 L CNN
+F 2 "OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical" V 9475 1500 50  0001 C CNN
+F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 9300 1450 50  0001 C CNN
+	1    9300 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1650 9300 1775
+Connection ~ 9300 1775
+Wire Wire Line
+	9300 1775 8950 1775
+Wire Wire Line
+	9300 1350 9300 1250
+Wire Wire Line
+	9300 1250 9150 1250
+Connection ~ 9150 1250
+$Comp
+L Connector:AudioJack3_Ground J?
+U 1 1 5C1B1418
+P 3050 3600
+F 0 "J?" H 2818 3529 50  0000 R CNN
+F 1 "OSC1CV" H 2818 3620 50  0000 R CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 3050 3600 50  0001 C CNN
+F 3 "~" H 3050 3600 50  0001 C CNN
+	1    3050 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C1B1A3B
+P 2675 3400
+F 0 "R?" V 2468 3400 50  0000 C CNN
+F 1 "1k2" V 2559 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2605 3400 50  0001 C CNN
+F 3 "~" H 2675 3400 50  0001 C CNN
+	1    2675 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5C1B1A41
+P 2675 3700
+F 0 "D?" V 2629 3779 50  0000 L CNN
+F 1 "OSC1CV" V 2720 3779 50  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm" H 2675 3700 50  0001 C CNN
+F 3 "~" H 2675 3700 50  0001 C CNN
+	1    2675 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2675 3850 2850 3850
+Wire Wire Line
+	2850 3850 2850 3700
+Wire Wire Line
+	2850 3600 2850 3700
+Connection ~ 2850 3700
+Wire Wire Line
+	2850 3500 2850 3250
+Wire Wire Line
+	2850 3250 2675 3250
+Text GLabel 2850 3250 2    50   Input ~ 0
+OSC1-CV
 $EndSCHEMATC

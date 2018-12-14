@@ -58,7 +58,7 @@ Wire Wire Line
 Wire Wire Line
 	9525 1875 9525 1775
 Wire Wire Line
-	9525 1775 8950 1775
+	9525 1775 9300 1775
 Connection ~ 8950 1775
 Wire Wire Line
 	8950 1775 8950 1825
@@ -917,27 +917,9 @@ Wire Wire Line
 	2600 2325 2550 2325
 Wire Wire Line
 	2550 2325 2550 2250
-$Comp
-L Connector:AudioJack3_Ground J6
-U 1 1 5C1C640D
-P 1350 2300
-F 0 "J6" H 1118 2229 50  0000 R CNN
-F 1 "AudioJack" H 1118 2320 50  0000 R CNN
-F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 1350 2300 50  0001 C CNN
-F 3 "~" H 1350 2300 50  0001 C CNN
-	1    1350 2300
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	1550 2200 1750 2200
 Wire Wire Line
 	2550 2425 1550 2425
-Wire Wire Line
-	1550 2425 1550 2400
 Connection ~ 2550 2425
-Wire Wire Line
-	1550 2400 1550 2300
-Connection ~ 1550 2400
 $Comp
 L Connector:AudioJack3_Ground J8
 U 1 1 5C1F628A
@@ -1058,7 +1040,6 @@ Connection ~ 1550 3275
 Connection ~ 1550 3175
 Connection ~ 1550 2850
 Connection ~ 1550 2750
-Connection ~ 1550 2425
 $Comp
 L Connector:TestPoint TP5
 U 1 1 5C2D2174
@@ -1070,7 +1051,6 @@ F 3 "~" H 1950 2200 50  0001 C CNN
 	1    1750 2200
 	1    0    0    -1  
 $EndComp
-Connection ~ 1750 2200
 Wire Wire Line
 	1750 2200 1850 2200
 $Comp
@@ -1254,6 +1234,93 @@ Wire Wire Line
 Wire Wire Line
 	1150 1375 1150 1650
 Connection ~ 1150 1650
-Text GLabel 1500 1050 1    50   Input ~ 0
-DC-in
+$Comp
+L Sensor_Optical:LDR03 R11
+U 1 1 5C1A1B97
+P 9300 1500
+F 0 "R11" H 9370 1546 50  0000 L CNN
+F 1 "OSC1CV" H 9370 1455 50  0000 L CNN
+F 2 "OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical" V 9475 1500 50  0001 C CNN
+F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 9300 1450 50  0001 C CNN
+	1    9300 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1650 9300 1775
+Connection ~ 9300 1775
+Wire Wire Line
+	9300 1775 8950 1775
+Wire Wire Line
+	9300 1350 9300 1250
+Wire Wire Line
+	9300 1250 9150 1250
+Connection ~ 9150 1250
+$Comp
+L Connector:AudioJack3_Ground J4
+U 1 1 5C1B1418
+P 3050 3600
+F 0 "J4" H 2818 3529 50  0000 R CNN
+F 1 "OSC1CV" H 2818 3620 50  0000 R CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 3050 3600 50  0001 C CNN
+F 3 "~" H 3050 3600 50  0001 C CNN
+	1    3050 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5C1B1A3B
+P 2675 3400
+F 0 "R12" V 2468 3400 50  0000 C CNN
+F 1 "1k2" V 2559 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2605 3400 50  0001 C CNN
+F 3 "~" H 2675 3400 50  0001 C CNN
+	1    2675 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5C1B1A41
+P 2675 3700
+F 0 "D3" V 2629 3779 50  0000 L CNN
+F 1 "OSC1CV" V 2720 3779 50  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm" H 2675 3700 50  0001 C CNN
+F 3 "~" H 2675 3700 50  0001 C CNN
+	1    2675 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2675 3850 2850 3850
+Wire Wire Line
+	2850 3850 2850 3700
+Wire Wire Line
+	2850 3600 2850 3700
+Connection ~ 2850 3700
+Wire Wire Line
+	2850 3500 2850 3250
+Wire Wire Line
+	2850 3250 2675 3250
+Text Label 2850 3250 0    50   ~ 0
+OSC1_CV
+Text Label 1175 1050 0    50   ~ 0
+DC_in
+Text Label 5175 1775 0    50   ~ 0
+LFO1
+Text Label 9375 1775 0    50   ~ 0
+OSC1
+Text Label 9125 4025 0    50   ~ 0
+OSC2
+Text Label 5275 4025 0    50   ~ 0
+LFO2
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5C1EB53F
+P 2675 3250
+F 0 "TP1" H 2733 3370 50  0000 L CNN
+F 1 "OSC1CV" H 2733 3279 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm_LooseFit" H 2875 3250 50  0001 C CNN
+F 3 "~" H 2875 3250 50  0001 C CNN
+	1    2675 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 2675 3250
 $EndSCHEMATC
