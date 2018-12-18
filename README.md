@@ -6,4 +6,6 @@ It creates a saw pulse and in this config I can modulate them via the base of th
 
 ![OSC](Osc.jpg)
 
+![3D](Kicad_Drone_osc_3d.png)
+
 ![Schematic](Kicad_Drone_osc_sch.png)
