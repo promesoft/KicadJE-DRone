@@ -12,6 +12,7 @@ For more details on this oscilator visit [AN47](https://www.analog.com/media/en/
 ### AM
 Each section of the oscilators are AC coupled with a reasonably high input resistance that in the prototype enabled cascading of the oscilators so the output of the oscilator would be AM mulated with the input on the base.
 ### CV / FM / Vactrol
+Prototype has been performed with a 5516 LDR in a heat shrink package with an LED - its not exactly 1V/Oct but it works
 ![Vactrol](Kicad_Oscillator_Drone_OSC1_Vactrol.png)
 
 # Prototype implementation
