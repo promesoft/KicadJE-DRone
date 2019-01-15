@@ -13,7 +13,7 @@ For more details on this oscilator visit [AN47](https://www.analog.com/media/en/
 ### Issues and Notes
 
 ## Physical Construction
- - 50x100mm
+ - 50,8x100,2mm
  - Optional cut in 2 
  - Mounting in either Eurorack or Stompbox 1590B
 
@@ -36,7 +36,11 @@ A simple stripboard implementation in a 1590B stompbox
 
 # 3D 
 Visualization of the board
-![3D](Kicad_Drone_osc_3d.png)
+![3D](Kicad_Drone_osc_RevA_Top3D.png)
+
+## LFO 1 and OSC 1 3D
+![](Kicad_Drone_osc_RevA_Side3D_LFO2OSC2.png)
 
 # LFO 1 Schematic
 ![Schematic](Kicad_Drone_osc_sch.png)
+
