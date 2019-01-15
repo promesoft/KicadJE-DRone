@@ -17,6 +17,10 @@ For more details on this oscilator visit [AN47](https://www.analog.com/media/en/
  - Optional cut in 2 
  - Mounting in either Eurorack or Stompbox 1590B
 
+## Components
+ - Jack connectors: PJ-321
+ - SS9018 HJ NPN BJT
+
 ## Features
 4 Separate saw oscillators.
  - 2 identical
