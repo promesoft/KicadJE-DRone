@@ -18,8 +18,9 @@ For more details on this oscilator visit [AN47](https://www.analog.com/media/en/
  - Mounting in either Eurorack or Stompbox 1590B
 
 ## Components
- - Jack connectors: PJ-321
- - SS9018 HJ NPN BJT
+ - Jack connectors: PJ-321 (important for the footprint)
+ - SS9018 HJ NPN BJT for the oscillator (important for the voltage)
+ - 5516 LDR for the vactrol (matched with the pot for the osc)
 
 ## Features
 4 Separate saw oscillators.
