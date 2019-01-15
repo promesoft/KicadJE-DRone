@@ -1,5 +1,4 @@
 # Kicad-droneosc
-
 This is a very simple circuit based around S9018 NPN BJT's.
 
 It creates a saw pulse and in this config I can modulate them via the base of the BJT. Its inspired by the work of [Kerry Wong](http://www.kerrywong.com/2014/03/19/bjt-in-reverse-avalanche-mode/) and [Sam Battle](https://www.lookmumnocomputer.com/projects/#/simplest-oscillator/)
@@ -7,6 +6,21 @@ It creates a saw pulse and in this config I can modulate them via the base of th
 ## Reverse Avalanche Breakdown
 As this oscilator is based on reverse avalanche breakdown it is highly dependent on the type of BJT used. For this setup the SS9018 high frequency transistor has been selected as it start oscilating below 9V (which is often used in stomp box effect pedals). 
 For more details on this oscilator visit [AN47](https://www.analog.com/media/en/technical-documentation/application-notes/an47fa.pdf)
+
+## Status - Rev A board layout and Gerber
+### Errata
+
+### Issues and Notes
+
+## Physical Construction
+100x100mm
+Optional cut in 2
+
+## Features
+4 Separate saw oscillators.
+ - 2 identical
+ - 1 simple
+ - 1 with VCO (Vactrol) and Modulation input
 
 ## Modulation
 ### AM
