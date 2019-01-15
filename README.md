@@ -13,8 +13,9 @@ For more details on this oscilator visit [AN47](https://www.analog.com/media/en/
 ### Issues and Notes
 
 ## Physical Construction
-100x100mm
-Optional cut in 2
+ - 50x100mm
+ - Optional cut in 2 
+ - Mounting in either Eurorack or Stompbox 1590B
 
 ## Features
 4 Separate saw oscillators.
