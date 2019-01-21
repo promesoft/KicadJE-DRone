@@ -41,6 +41,7 @@ A simple stripboard implementation in a 1590B stompbox
 
 # 3D 
 Visualization of the board
+![3D](Kicad_Drone_osc_RevA2_Top3D.png)
 ![3D](Kicad_Drone_osc_RevA_Top3D.png)
 
 ## LFO 1 and OSC 1 3D
