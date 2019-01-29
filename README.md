@@ -7,7 +7,7 @@ It creates a saw pulse and in this config I can modulate them via the base of th
 As this oscilator is based on reverse avalanche breakdown it is highly dependent on the type of BJT used. For this setup the SS9018 high frequency transistor has been selected as it start oscilating below 9V (which is often used in stomp box effect pedals). 
 For more details on this oscilator visit [AN47](https://www.analog.com/media/en/technical-documentation/application-notes/an47fa.pdf)
 
-## Status - Rev A board layout and Gerber
+## Status - Rev A board ordered at JLCPCB
 ### Errata
 
 ### Issues and Notes
