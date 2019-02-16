@@ -9,7 +9,9 @@ For more details on this oscilator visit [AN47](https://www.analog.com/media/en/
 
 ## Status - Rev A board ordered at JLCPCB
 ### Errata
-
+ - Footprint of mini jacks should be updated
+ - Assisting text on potmeters
+  
 ### Issues and Notes
 
 ## Physical Construction
