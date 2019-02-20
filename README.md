@@ -8,6 +8,34 @@ As this oscilator is based on reverse avalanche breakdown it is highly dependent
 For more details on this oscilator visit [AN47](https://www.analog.com/media/en/technical-documentation/application-notes/an47fa.pdf)
 
 ## Status - Rev A board - initial verification
+### Initial 
+| Stage  | Detail | Status |
+| ------------- | ------------- | ------------- |
+| create material  | sch/pcb | produced Rev A  |
+| | gerber | produced and uploaded RevA |
+| production  | ordered  | OK |
+|  | produced | OK |
+|  | delivered | OK |
+### Preliminary validation
+| Test  | Detail | Status |
+| ------------- | ------------- | ------------- |
+| Initial Inspection | Visual | See Errata |
+| | Component Mounting | OK LFO 2|
+| Initial Technical Test | LFO 1 |  |
+| | OSC 1 |  |
+| | LFO 2 | OK |
+| | OSC 1 |  |
+
+### Secondary validation
+| Test  | Detail | Status |
+| ------------- | ------------- |------------- |
+| Product Test | LFO 1 |  |
+| | OSC 1 |  |
+| | LFO 2  | OSC+AM OK - Volume ok (see issues)|
+| | OSC 1 |  |
+| Physical | 1590 II Box |  |
+|  | Eurorack |  |
+| Long Term Product Test | | ongoing |
 ### Errata
  - Footprint of mini jacks should be updated
  - Assisting text on potmeters
