@@ -41,7 +41,7 @@ For more details on this oscilator visit [AN47](https://www.analog.com/media/en/
  - Assisting text on potmeters
  - D1 is 0805 - should have been SOD123 or Minimelf
  - RV7 Volume Pot is reversed (possibly all other vol pots)
- - 
+ - 10uf used for LFO output capacitor
   
 ### Issues and Notes
 
