@@ -31,7 +31,7 @@ For more details on this oscilator visit [AN47](https://www.analog.com/media/en/
 | ------------- | ------------- |------------- |
 | Product Test | LFO 1 |  |
 | | OSC 1 |  |
-| | LFO 2  | OSC+AM OK - Volume ok (see issues)|
+| | LFO 2  | OSC+AM OK - Volume ok (see Errata)|
 | | OSC 1 |  |
 | Physical | 1590 II Box |  |
 |  | Eurorack |  |
